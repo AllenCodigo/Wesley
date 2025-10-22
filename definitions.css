@@ -29,13 +29,20 @@ a:active {
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    margin: 0%; 
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .inicio {
-    position: absolute;
-    top: 0px;
-    left: 0%;
+    margin: 0%;
     z-index: 2;
     width: 100%;
 }
@@ -47,6 +54,7 @@ body {
     width: 100%;
     left: 0%;
     top: 0%;
+    display: flex;
 }
 
 .phrase {
@@ -58,64 +66,55 @@ body {
 }
 
 .comentario {
-    position: absolute;
-    top: 634px;
     background-color: rgb(189, 29, 29);
-    left: 0%;
     height: 500px;
     z-index: 2;
-    width: 1520px;
-}
+    margin: 0%;
+    padding: 0%;
+    }
 
 .cardapiointrodution {
-    position: absolute;
-    top: 1134px;
     background-color: rgb(74, 34, 34);
     left: 0%;
-    width: 1520px;
+    width: 100%;
     height: 230px;
     z-index: 2;
 }
 
 .cardapio {
-    position: absolute;
-    top: 1364px;
+   
     background-color: rgb(74, 34, 34);
-    left: 0%;
-    width: 1520px;
+   
+    width: 100%;
     height: 450px;
     z-index: 2;
 }
 
 .description {
-    position: absolute;
-    top: 1814px;
+  
     background-color: rgb(189, 29, 29);
-    left: 0%;
-    width: 1520px;
+    
+    width: 100%;
     height: 1000px;
     z-index: 2;
 }
 
 .Hamburguer {
-    position: absolute;
-    top: 2854px;
+   
     background-color: rgba(235, 215, 65, 0.2);
     left: 800px;
     z-index: 2;
 }
 
 .hamburguerimage {
-    position: absolute;
-    top: 2854px;
+   
     left: 100px;
     height: 450px;
     z-index: 2;
 }
 
 .pizza {
-    position: absolute;
-    top: 3454px;
+ 
     left: 100px;
     right: 800px;
     background-color: rgba(235, 215, 65, 0.2);
@@ -123,16 +122,14 @@ body {
 }
 
 .pizzaimage {
-    position: absolute;
-    top: 3454px;
+   
     height: 450px;
     left: 800px;
     z-index: 2;
 }
 
 .natural {
-    position: absolute;
-    top: 3950px;
+   
     left: 0px;
     height: 500px;
     background-color: rgb(74, 34, 34);
@@ -141,8 +138,7 @@ body {
 }
 
 .naturalimage {
-    position: absolute;
-    top: 4000px;
+    
     height: 450px;
     left: 800px;
     background-color: rgb(74, 34, 34);
@@ -151,8 +147,7 @@ body {
 
 .contact {
     background-color: rgb(189, 29, 29);
-    position: absolute;
-    top: 4450px;
+   
     left: 0%;
     width: 1520px;
     height: 830px;
@@ -163,8 +158,7 @@ body {
     background-color: rgb(255, 200, 0);
     left: 0%;
     width: 100%;
-    top: 5280;
-    position: absolute;
+  
     height: 300px;
     z-index: 2;
     width: 1520px;
@@ -175,7 +169,7 @@ body {
     left: 0%;
     top: 0%;
     background-color: rgba(139, 69, 19, 0.2);
-    z-index: 1;
+    z-index: -1;
   
 }
 
