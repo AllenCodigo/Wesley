@@ -1,15 +1,25 @@
-H1 {margin: 0%;
+H1 {
+    margin: 0%;
     font-size: 35px;
 }
 
 h2 {
-    font-size: 32px;margin: 0%;
+    font-size: 32px;
+    margin: 0%;
 }
 
+<<<<<<< HEAD
 
+=======
+h3 {
+    font-size: 30px;
+    margin: 0%;
+}
+>>>>>>> cd320a8b27ad2daf403f762ec0bfa9001006d676
 
 h4 {
-    font-size: 28px; margin: 0%;
+    font-size: 28px;
+    margin: 0%;
 }
 
 a {
@@ -27,21 +37,24 @@ a:active {
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-    margin: 0%; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-ul {display: flex; 
+ul {
+    display: flex;
     justify-content: center;
     list-style: none;
     margin: 0%;
- }
+}
 
 
 
-p {margin: 0%;}
+p {
+    margin: 0%;
+}
 
 
 
@@ -51,6 +64,13 @@ p {margin: 0%;}
     width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+.firstline {
+    display: flex;
+    gap: 25px;
+}
+>>>>>>> cd320a8b27ad2daf403f762ec0bfa9001006d676
 
 .begin {
     z-index: 3;
@@ -58,6 +78,7 @@ p {margin: 0%;}
     width: 100%;
     left: 0%;
     top: 0%;
+<<<<<<< HEAD
    display: flex;   
 }
 
@@ -67,6 +88,13 @@ p {margin: 0%;}
     width: 100%;
   gap: 20px; 
 }
+=======
+    display: flex;
+
+}
+
+.firstbotton {}
+>>>>>>> cd320a8b27ad2daf403f762ec0bfa9001006d676
 
 
 .phrase {
@@ -86,6 +114,7 @@ p {margin: 0%;}
     margin: 0%;
     padding: 0%;
     gap: 30px;
+<<<<<<< HEAD
     }
 
 .comment-grid {
@@ -98,6 +127,36 @@ p {margin: 0%;}
 .comment-grid p {
     color: white;
    
+=======
+
+
+}
+
+.commentimage {
+    display: flex;
+    justify-content: center;
+    /* centraliza as imagens */
+    align-items: center;
+    /* alinha verticalmente */
+    gap: clamp(100px, 15vw, 300px);
+    /* espaço adaptável */
+    list-style: none;
+    /* remove marcadores */
+    padding: 0;
+    margin: 0;
+}
+
+.commentnames {
+    display: flex;
+    justify-content: center;
+    /* centraliza as imagens */
+    align-items: center;
+    /* alinha verticalmente */
+    list-style: none;
+    /* remove marcadores */
+    padding: 0;
+    margin: 0;
+>>>>>>> cd320a8b27ad2daf403f762ec0bfa9001006d676
 }
 
 .comment-grid img {
@@ -131,7 +190,7 @@ p {margin: 0%;}
 }
 
 .cardapio {
-   background-color: rgb(74, 34, 34);
+    background-color: rgb(74, 34, 34);
     z-index: 2;
     display: grid;
     width: 100%;
@@ -150,8 +209,12 @@ p {margin: 0%;}
 }
 
 .description {
-    
+
     background-color: rgb(189, 29, 29);
+<<<<<<< HEAD
+=======
+
+>>>>>>> cd320a8b27ad2daf403f762ec0bfa9001006d676
     width: 100%;
     height: 1000px;
     z-index: 2;
@@ -165,10 +228,10 @@ p {margin: 0%;}
     padding: 20px;
     box-sizing: border-box;
     gap: 20px;
-   
+
 }
 
-.hamburguertext {   
+.hamburguertext {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -180,7 +243,7 @@ p {margin: 0%;}
 }
 
 .hamburguerimage {
-   
+
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -189,7 +252,12 @@ p {margin: 0%;}
     background-color: rgba(235, 215, 65, 0.2);
     margin: 0%;
     padding: 0%;
+<<<<<<< HEAD
      
+=======
+    margin-left: 60px;
+
+>>>>>>> cd320a8b27ad2daf403f762ec0bfa9001006d676
 }
 
 .pizza {
@@ -199,7 +267,13 @@ p {margin: 0%;}
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+<<<<<<< HEAD
     gap: 20px;    
+=======
+    gap: 20px;
+
+
+>>>>>>> cd320a8b27ad2daf403f762ec0bfa9001006d676
 }
 
 .pizzatext {
@@ -234,7 +308,7 @@ p {margin: 0%;}
     gap: 20px;
     background-color: rgb(74, 34, 34);
     z-index: 2;
-    }
+}
 
 .naturaltext {
     display: flex;
@@ -245,7 +319,7 @@ p {margin: 0%;}
     height: 250px;
     margin-left: 60px;
     padding: 0%;
-    font-size: clamp(18px,2vw,25px); 
+    font-size: clamp(18px, 2vw, 25px);
 }
 
 .naturalimage {
@@ -272,7 +346,7 @@ p {margin: 0%;}
     align-items: center;
     justify-content: center;
     gap: 20px;
-   }
+}
 
 form {
     display: flex;
@@ -285,12 +359,12 @@ form {
     z-index: 2;
     align-items: center;
     justify-content: center;
-    gap: 20px;   
+    gap: 20px;
 }
 
 .socialmedia {
     background-color: rgb(255, 200, 0);
-     z-index: 2;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -298,7 +372,7 @@ form {
     box-sizing: border-box;
     gap: 200px;
     z-index: 2;
-    
+
 }
 
 .socialintrodution {
@@ -312,7 +386,7 @@ form {
     padding: 0%;
     gap: 100px;
     gap: 50px;
-   
+
 }
 
 
@@ -335,14 +409,19 @@ form {
     background-color: rgba(139, 69, 19, 0.2);
     z-index: -1;
     height: 100%;
+<<<<<<< HEAD
     display: flex;
   
+=======
+
+>>>>>>> cd320a8b27ad2daf403f762ec0bfa9001006d676
 }
 
 .Fundoimagem {
     display: flex;
 }
 
+<<<<<<< HEAD
 
 
 @media (min-width: 1330px) {
@@ -403,6 +482,30 @@ form {
     width: 670px;
     height: 400px;
     padding-right: 60px;     
+=======
+@media (min-width: 1331px) {
+    .commentimage {
+        gap: 300px;
+    }
+
+    .commentnames {
+        gap: 460px;
+    }
+
+    .firstbotton {
+        padding-left: 900px;
+        color: blue;
+    }
+
+    .hamburguerimage {
+        width: 670px;
+        height: 400px;
+    }
+
+    .naturalimage {
+        width: 670px;
+        height: 400px;
+>>>>>>> cd320a8b27ad2daf403f762ec0bfa9001006d676
     }
 .pizzatext {
     font-size: 20px;
@@ -413,9 +516,20 @@ form {
     width: 100%;
 }
 
+<<<<<<< HEAD
 .Fundoimagem {
     display: block;
     height: 1270px;}
+=======
+    .pizzaimage {
+        width: 670px;
+        height: 400px;
+    }
+
+    .Fundoimagem {
+        height: 1270px;
+    }
+>>>>>>> cd320a8b27ad2daf403f762ec0bfa9001006d676
 
 .imgdekstop {
     display: block;
@@ -437,6 +551,7 @@ form {
 
 @media (max-width: 1330px) and (min-width: 768px) {
 
+<<<<<<< HEAD
     h3 {
     font-size: clamp(20px, 3vw, 30px); 
     margin: 0%;
@@ -444,6 +559,15 @@ form {
 
     .begin {
         position: fixed;
+=======
+    .firstbotton {
+        padding-left: clamp(400px, 40vw, 900px);
+        color: green;
+    }
+
+    .commentimage {
+        gap: clamp(100px, 15vw, 300px);
+>>>>>>> cd320a8b27ad2daf403f762ec0bfa9001006d676
     }
 
 
@@ -474,6 +598,7 @@ form {
 
 
     .commentnames {
+<<<<<<< HEAD
     gap: clamp(100px, 30vw, 460px);
         }
     
@@ -651,11 +776,34 @@ form {
 
     .socialimages {
     text-align: center;
+=======
+        gap: clamp(100px, 30vw, 460px);
+    }
+
+    .hamburguerimage {
+        width: clamp(300px, 30vw, 670px);
+        height: clamp(200px, 20vw, 400px);
+    }
+
+    .pizzaimage {
+        width: clamp(300px, 30vw, 670px);
+        height: clamp(200px, 20vw, 400px);
+    }
+
+    .naturaltext {
+        font-size: clamp(18px, 20px, 25px);
+    }
+
+    .naturalimage {
+        width: clamp(300px, 30vw, 670px);
+        height: clamp(200px, 20vw, 400px);
+>>>>>>> cd320a8b27ad2daf403f762ec0bfa9001006d676
     }
 
     .Fundoimagem {
-    height: 1800px;
+        height: clamp(1270px, 78vw, 2000px);
     }
+<<<<<<< HEAD
 
  
     .imgdekstop {
@@ -669,4 +817,80 @@ form {
 }
 
 
+=======
+}
 
+@media (max-width: 767px) and (min-width: 375px) {
+    .firstbotton {
+        padding-left: clamp(400px, 40vw, 900px);
+        color: pink;
+    }
+
+    .commentimage {
+        gap: clamp(100px, 15vw, 300px);
+    }
+
+    .commentnames {
+        gap: clamp(100px, 30vw, 460px);
+    }
+
+    .hamburguerimage {
+        width: clamp(300px, 30vw, 670px);
+        height: clamp(200px, 20vw, 400px);
+    }
+
+    .pizzaimage {
+        width: clamp(300px, 30vw, 670px);
+        height: clamp(200px, 20vw, 400px);
+    }
+
+    .naturaltext {
+        font-size: clamp(18px, 20px, 25px);
+    }
+
+    .naturalimage {
+        width: clamp(300px, 30vw, 670px);
+        height: clamp(200px, 20vw, 400px);
+    }
+>>>>>>> cd320a8b27ad2daf403f762ec0bfa9001006d676
+
+    .Fundoimagem {
+        height: 1800px;
+    }
+
+}
+
+@media (max-width: 374px) {
+    .firstbotton {
+        padding-left: clamp(400px, 40vw, 900px);
+        color: red;
+    }
+
+    .commentimage {
+        gap: clamp(100px, 15vw, 300px);
+    }
+
+    .commentnames {
+        gap: clamp(100px, 30vw, 460px);
+    }
+
+    .hamburguerimage {
+        width: clamp(300px, 30vw, 670px);
+        height: clamp(200px, 20vw, 400px);
+    }
+
+    .pizzaimage {
+        width: clamp(300px, 30vw, 670px);
+        height: clamp(200px, 20vw, 400px);
+    }
+
+    .naturaltext {
+        font-size: clamp(18px, 20px, 25px);
+    }
+
+    .naturalimage {
+        width: clamp(300px, 30vw, 670px);
+        height: clamp(200px, 20vw, 400px);
+    }
+
+}
