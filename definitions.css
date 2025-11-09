@@ -6,9 +6,7 @@ h2 {
     font-size: 32px;margin: 0%;
 }
 
-h3 {
-    font-size: 30px; margin: 0%;
-}
+
 
 h4 {
     font-size: 28px; margin: 0%;
@@ -53,29 +51,26 @@ p {margin: 0%;}
     width: 100%;
 }
 
-.firstline {
-   display: flex;
-   gap: 25px;
-}
 
 .begin {
-    position: fixed;
     z-index: 3;
     background-color: rgb(74, 34, 34, 0.2);
     width: 100%;
     left: 0%;
     top: 0%;
-    display: flex;
-    
+   display: flex;   
 }
 
-.firstbotton {
-   
+.linefirst {
+  display: flex;
+  justify-content: flex-end;
+    width: 100%;
+  gap: 20px; 
 }
+
 
 .phrase {
     position: absolute;
-    top: 150px;
     z-index: 3;
     text-align: center;
     align-items: center;
@@ -87,33 +82,46 @@ p {margin: 0%;}
     display: flex;
     flex-direction: column;
     background-color: rgb(189, 29, 29);
-    height: 600px;
     z-index: 2;
     margin: 0%;
     padding: 0%;
     gap: 30px;
-    
-    
     }
 
-.commentimage {
-  display: flex;
-  justify-content: center; /* centraliza as imagens */
-  align-items: center;      /* alinha verticalmente */
-  gap: clamp(100px, 15vw, 300px); /* espaço adaptável */
-  list-style: none; /* remove marcadores */
-  padding: 0;
-  margin: 0;
+.comment-grid {
+  text-align: center;
+  gap: 30px;
+  align-items: start;
+  margin-bottom: 30px;
 }
 
-.commentnames {
-    display: flex;
-  justify-content: center; /* centraliza as imagens */
-  align-items: center;      /* alinha verticalmente */
-  list-style: none; /* remove marcadores */
-  padding: 0;
-  margin: 0;
+.comment-grid p {
+    color: white;
+   
 }
+
+.comment-grid img {
+    margin-bottom: 20px;
+}
+
+.coluna {
+    justify-content: space-between;
+    gap: 50px;
+    row-gap: 50px;
+}
+
+.coluna1 {
+    justify-content: space-between;
+    gap: 50px;
+    row-gap: 50px;
+}
+
+.coluna2 {
+    justify-content: space-between;
+    gap: 50px;
+    row-gap: 50px;
+}
+
 
 .cardapiointrodution {
     background-color: rgb(74, 34, 34);
@@ -125,19 +133,25 @@ p {margin: 0%;}
 .cardapio {
    background-color: rgb(74, 34, 34);
     z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    text-align: center;
     gap: 20px;
+}
+
+.cardapio-linha {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .description {
     
     background-color: rgb(189, 29, 29);
-    
     width: 100%;
     height: 1000px;
     z-index: 2;
@@ -175,7 +189,6 @@ p {margin: 0%;}
     background-color: rgba(235, 215, 65, 0.2);
     margin: 0%;
     padding: 0%;
-    margin-left: 60px;
      
 }
 
@@ -186,9 +199,7 @@ p {margin: 0%;}
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    gap: 20px;
-    
-    
+    gap: 20px;    
 }
 
 .pizzatext {
@@ -211,7 +222,6 @@ p {margin: 0%;}
     z-index: 2;
     background-color: rgba(235, 215, 65, 0.2);
     padding: 0%;
-    margin-right: 60px;
 }
 
 .natural {
@@ -245,7 +255,6 @@ p {margin: 0%;}
     box-sizing: border-box;
     z-index: 2;
     padding: 0%;
-    margin-right: 60px;
     z-index: 2;
 }
 
@@ -326,6 +335,7 @@ form {
     background-color: rgba(139, 69, 19, 0.2);
     z-index: -1;
     height: 100%;
+    display: flex;
   
 }
 
@@ -335,144 +345,328 @@ form {
 
 
 
+@media (min-width: 1330px) {
 
-@media (min-width: 1331px) {
-     .commentimage {
-    gap: 300px; 
-    }
-
-    .commentnames {
-    gap: 460px;
-    }
-
-    .firstbotton {
-    padding-left: 900px;
+   h3 {
+    font-size: 30px; margin: 0%;
 }
+
+    .phrase {
+    top: 150px;
+    }
+
+    .food {
+    text-align: center;
+    }
+
+    .begin {
+        position: fixed;
+    }
+
+    .comentario {
+        height: 500px;
+    }
+
+    .comment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);}
+
+    .cardapio-linha {
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+    .productostitles {
+        display: none;
+    }
+  
   .hamburguerimage {
     width: 670px;
     height: 400px;
+    margin-left: 60px;
+    }
+
+    .hamburguertext {
+    font-size: 20px;
     }
 
   .naturalimage {
     width: 670px;
-    height: 400px;  
+    height: 400px;
+    padding-right: 60px;    
     }
+
+.naturaltext {
+    font-size: 25px;
+}
 
 .pizzaimage {
     width: 670px;
-    height: 400px;   
+    height: 400px;
+    padding-right: 60px;     
     }
+.pizzatext {
+    font-size: 20px;
+}
+
+.fundo {
+    display: block;
+    width: 100%;
+}
 
 .Fundoimagem {
+    display: block;
     height: 1270px;}
+
+.imgdekstop {
+    display: block;
+}
+
+.imgmobile {
+    display: none;
+    }
+
+}
+
+@media (max-width:1200px) {
+    .textdescription {
+        text-align: justify;
+    }
+
 
 }
 
 @media (max-width: 1330px) and (min-width: 768px) {
-    
-    .firstbotton {
-    padding-left: clamp(400px, 40vw,900px);
+
+    h3 {
+    font-size: clamp(20px, 3vw, 30px); 
+    margin: 0%;
 }
 
-    .commentimage {
-    gap: clamp(100px,15vw, 300px);
+    .begin {
+        position: fixed;
     }
+
+
+    .food {
+    text-align: left;
+    }
+
+     .phrase {
+    top: 150px;
+    }
+
+    .comentario {
+        height: 500px;
+    }
+    
+    .comment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);}
+   
+    .commentimage {
+    gap: clamp(30px,14vw, 300px);
+     }
+
+    .commentimage img {
+    width: clamp(30px, 30vw, 150px);
+    
+    }
+
 
     .commentnames {
     gap: clamp(100px, 30vw, 460px);
         }
+    
+     .cardapio-linha {
+    grid-template-columns: repeat(3, 1fr);
+    }
+  
 
     .hamburguerimage {
     width: clamp(300px,30vw,670px);
-    height: clamp(200px,20vw,400px);
+    height: clamp(200px,20vw,400px);   
+    margin-left: 60px;
+    }
+    
+
+    .hamburguertext {
+    font-size: clamp(15px, 2vw, 20px);
     }
 
     .pizzaimage {
     width: clamp(300px,30vw,670px);
-    height: clamp(200px,20vw,400px);   
+    height: clamp(200px,20vw,400px);
+    padding-right: 60px;   
+    }
+
+    .pizzatext {
+    font-size: clamp(15px, 2vw, 20px);  
     }
 
     .naturaltext {
-    font-size: clamp(18px,20px,25px);    
+    font-size: clamp(16px,2vw,25px);    
     }
 
     .naturalimage {
     width: clamp(300px,30vw,670px);
-    height: clamp(200px,20vw,400px);  
+    height: clamp(200px,20vw,400px);
+    padding-right: 60px;    
     }
 
     .Fundoimagem {height: clamp(1270px, 78vw, 2000px);}
+
+    .imgdekstop {
+    display: block;
+    }
+
+    .imgmobile {
+    display: none;
+    }
+
+    .productostitles {
+        display: none;
+    }
 }
 
-@media (max-width: 767px) and (min-width: 375px) {
-     .firstbotton {
-    padding-left: clamp(400px, 40vw,900px);
-}
+
+
+@media (max-width: 768px) {
+
+    .begin {
+        justify-content: center;
+        position:absolute;
+    }
+
+    .linefirst {
+        display: none;
+    }
+
+     .phrase {
+    top: 80px;
+    }
+
+    .food {
+       
+        text-align: center;
+    }
+
+    .comentario {
+        height: 400px;
+        align-items: center;
+    }
+
+    .comentario img {
+        display: none;
+    }
+
+      .comentario p {
+    font-size: 30px ;
+    text-align: left;
+    margin: 10px;
+    align-items: center;
+    }
+
+    .comment-grid {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    }
+    .coluna1 {
+        display: none;
+    }
+
+    .coluna2 {
+        display: none;
+    }
+
+     .commentphrase {
+        display: none;
+    }
 
     .commentimage {
-    gap: clamp(100px,15vw, 300px);
+    display: none;
     }
 
-    .commentnames {
-    gap: clamp(100px, 30vw, 460px);
+    .commentcardapio {
+    display: none;
+    }
+
+     .cardapio-linha {
+    grid-template-columns: repeat(1fr);
+    }
+
+    .unecessary {
+    display: none;
+    }
+
+    .description {
+    background-color: green;
+    height: 450px;
+    }
+
+    .productos {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .productos p {
+    display: none;
+    }
+  
+    .productos img {
+    height: 500px;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
         }
 
-    .hamburguerimage {
-    width: clamp(300px,30vw,670px);
-    height: clamp(200px,20vw,400px);
+    .productos section {
+    padding: 0%;
+    text-align: center;
+    justify-content: center;
     }
 
-    .pizzaimage {
-    width: clamp(300px,30vw,670px);
-    height: clamp(200px,20vw,400px);   
+    .productostitles {
+    z-index: 3;
+    position: absolute;
+    color: rgb(189, 29, 29);
+    }
+
+    .hamburguertext {
+    display: none;
+    }
+
+    .pizzatext {
+    display: none;
     }
 
     .naturaltext {
-    font-size: clamp(18px,20px,25px);    
+    display: none;
     }
 
-    .naturalimage {
-    width: clamp(300px,30vw,670px);
-    height: clamp(200px,20vw,400px);  
+    .socialintrodution {
+    display: none;
+    }
+
+    .socialimages {
+    text-align: center;
     }
 
     .Fundoimagem {
     height: 1800px;
     }
+
+ 
+    .imgdekstop {
+    display: none;
+    }
+ 
+    .imgmobile {
+    display: block;
+    }
    
 }
 
-@media (max-width: 374px) {
-     .firstbotton {
-    padding-left: clamp(400px, 40vw,900px);
-}
 
-    .commentimage {
-    gap: clamp(100px,15vw, 300px);
-    }
-
-    .commentnames {
-    gap: clamp(100px, 30vw, 460px);
-        }
-
-    .hamburguerimage {
-    width: clamp(300px,30vw,670px);
-    height: clamp(200px,20vw,400px);
-    }
-
-    .pizzaimage {
-    width: clamp(300px,30vw,670px);
-    height: clamp(200px,20vw,400px);   
-    }
-
-    .naturaltext {
-    font-size: clamp(18px,20px,25px);    
-    }
-
-    .naturalimage {
-    width: clamp(300px,30vw,670px);
-    height: clamp(200px,20vw,400px);  
-    }
-   
-}   
 
